@@ -1,0 +1,293 @@
+.bio-section {
+  /* padding: 75px; */
+  /* background-color: white; */
+  /* display: flex; */
+  /* flex-direction: column; */
+}
+
+/* .bio-section {
+  display: flex;
+  flex-wrap: wrap;
+} */
+
+.bio-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 50px;
+  /* border: solid 1px black; */
+}
+
+.skill-box {
+  transition: 0.25s ease-in-out;
+  margin: 15px;
+  display: inline-flex;
+  flex-direction: column;
+  width: 30vw;
+}
+
+.skill {
+  color: #3e363fde;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.skill > * {
+  transition: 0.25s ease-in-out;
+  font-size: 50px;
+}
+
+.skill-text {
+  font-family: "roboto";
+  line-height: 0.9em;
+  font-weight: 300;
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 0;
+}
+
+.skill-sub {
+  font-family: "roboto";
+  font-weight: 300;
+  font-size: 15px;
+  text-align: center;
+  margin: 5px 0;
+}
+
+.skill-header {
+  margin: 25px;
+  margin-bottom: 50px;
+  font-size: 35px;
+  text-align: center;
+}
+
+.LinkedIn-button {
+  background-color: rgb(136, 132, 136);
+  display: flex;
+  width: 175px;
+  margin: 0 auto;
+  margin-top: 5%;
+}
+
+.LinkedIn-button:before {
+  font-family: "roboto";
+  content: "Let's Connect.";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  /* font-weight: 900; */
+  width: 90%;
+  color: white;
+  height: 40px;
+  padding: 0;
+  margin: 0;
+  transition: 0.25s ease-in-out;
+}
+
+.tab {
+  transition: 0.25s ease-in-out;
+  width: 40px;
+  height: 40px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #0080bc;
+}
+
+.LinkedIn-button:hover:before {
+  transition: 0.25s ease-in-out;
+  content: "";
+  width: 0%;
+}
+
+.LinkedIn-button:hover .tab {
+  float: right;
+  transition: 0.25s ease-in-out;
+  width: 100%;
+}
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: flex-start; */
+  margin-top: 50px;
+  /* border: solid 1px black; */
+}
+
+.bio-caption {
+  margin: 0;
+  text-align: center;
+  line-height: 1.1em;
+  font-size: 18px;
+  background-color: rgb(245, 245, 245);
+  color: #3e363f;
+}
+
+.bio-image {
+  background-image: url(../../images/profile.jpeg);
+  width: 300px;
+  background-size: cover;
+  margin: 0 auto;
+}
+
+.bio {
+  font-size: 25px;
+  line-height: 1.1em;
+  margin: 0;
+  margin-bottom: 75px;
+  text-align: start;
+  padding: 0 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* width: 100vw; */
+}
+
+.bio p {
+  /* padding: 0 20px; */
+  color: #403741;
+}
+
+.bio-quote {
+  font-size: 25px;
+  font-family: "roboto condensed";
+  font-weight: 100;
+}
+
+.bio-body {
+  display: inline-block;
+  font-size: 18px;
+  font-family: "roboto";
+  font-weight: 300;
+}
+
+@media only screen and (min-width: 768px) {
+  .bio {
+    padding: 0 75px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .bio-content {
+    margin-bottom: 75px;
+  }
+
+  .bio-lower {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    /* border: solid 1px black;; */
+  }
+
+  .about-me {
+    margin: 0;
+    align-self: flex-start;
+    /* margin-right: auto; */
+  }
+
+  .bio-body {
+    margin: 0;
+  }
+
+  .bio-image {
+    margin: 0;
+    width: 275px;
+  }
+
+  .bio-header {
+    width: 42vw;
+    margin: 0 auto;
+    align-self: flex-start;
+    /* margin-top: 0; */
+  }
+
+  .skill-box {
+    width: 50%;
+    margin: 0;
+    /* border: solid 1px black;; */
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .bio-quote {
+    font-size: 28px;
+  }
+
+  .bio-body {
+    font-size: 20px;
+  }
+
+  .bio-image {
+    width: 375px;
+  }
+
+  .skill-box {
+    width: 15vw;
+    margin: 20px;
+    margin-top: ;
+  }
+
+  .skill > * {
+    transition: 0.25s ease-in-out;
+    font-size: 75px;
+  }
+
+  .skill-text {
+    font-size: 30px;
+  }
+
+  .skill-sub {
+    font-size: 20px;
+  }
+
+  .bio-header {
+    justify-content: space-evenly;
+  }
+}
+
+@media only screen and (min-width: 1408px) {
+  .bio {
+    padding-top: 75px;
+  }
+
+  .bio-content {
+    /* border: solid 1px black; */
+    width: 50%;
+  }
+
+  .bio-content h1 {
+    margin-top: 0;
+  }
+
+  .bio-header {
+    margin-top: 50px;
+    width: 100vw;
+  }
+
+  .about-me {
+    position: relative;
+    top: 35px;
+  }
+
+  .bio-image {
+    width: 400px;
+  }
+}
+
+@media only screen and (min-width: 2560px) {
+  .bio {
+    padding: 100px 300px;
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 768px) and (orientation: landscape) {
+
+  .bio-quote {
+    margin: 15px auto;
+  }
+}

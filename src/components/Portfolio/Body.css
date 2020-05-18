@@ -1,0 +1,9 @@
+.body {
+    background-color: rgb(245, 245, 245);
+    padding: 75px 0px;
+}
+
+.body .header {
+    margin-top: 0;
+    text-align: center;
+}

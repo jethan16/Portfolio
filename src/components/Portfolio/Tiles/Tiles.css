@@ -1,0 +1,168 @@
+.tile-section {
+  display: flex;
+  justify-content: center;
+}
+
+.tile-container {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 3px 0;
+  margin-bottom: 75px;
+}
+
+.tile {
+  width: 97vw;
+  height: 225px;
+  transition: all 0.5s ease-in-out;
+}
+
+.summary {
+  transition: all 0.25s ease-in-out;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  height: 100%;
+  color: #403741;
+}
+
+.summary > * {
+  font-family: "roboto condensed";
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin: 20px;
+}
+
+.summary p {
+  margin-bottom: 15px;
+  font-weight: 300;
+  padding: 0 50px;
+}
+
+.button {
+  padding: 10px;
+  width: 50%;
+  border-radius: 0;
+  border: solid 2px;
+  background: linear-gradient(to left, rgb(245, 245, 245) 50%, #403741 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  border-color: #403741;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  transition: all 0.25s ease-in-out;
+}
+
+.button h5 {
+  margin: 0;
+}
+
+.button:hover {
+  background-size: 200% 100%;
+  background-position: left bottom;
+  color: rgb(245, 245, 245);
+}
+
+.tile:hover .summary {
+  /* transition: 0.25s ease-in-out; */
+  background-color: rgb(245, 245, 245);
+  height: 100%;
+  opacity: 1;
+}
+
+/* .one {
+  background-image: url(../../../images/screenshots/sns_hero.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+} */
+
+.project-image {
+  position: absolute;
+  width: 500px;
+  height: 300px;
+  margin: 0;
+  object-fit: cover;
+}
+
+.tile:hover .project-image {
+  visibility: hidden;
+  opacity: 0;
+}
+
+/* .two {
+  background-image: url(../../../images/screenshots/gs_hero.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+} */
+
+/* .three {
+  background-image: url(../../../images/screenshots/dash_hero.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+} */
+
+@media only screen and (min-width: 768px) {
+  .tile-container {
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .tile {
+    width: 47%;
+    transition: 0.25s ease-in-out;
+  }
+
+  .button {
+    margin-bottom: 15px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .tile {
+    width: 47%;
+    height: 300px;
+  }
+}
+
+@media only screen and (min-width: 1404px) {
+  .tile-container {
+    justify-content: center;
+  }
+
+  .tile {
+    width: 500px;
+    height: 300px;
+    margin: 0;
+  }
+
+  .button {
+    width: 35%;
+  }
+
+  .project-image {
+    position: absolute;
+    width: 500px;
+    height: 300px;
+    margin: 0;
+    object-fit: cover;
+  }
+
+  /* .tile:hover > .project-image {
+    transition: 0.35s ease-in-out;
+    visibility: hidden;
+    opacity: 0;
+  } */
+}

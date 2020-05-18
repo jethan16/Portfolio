@@ -1,0 +1,150 @@
+.hero {
+  width: 100%;
+  height: 100vh;
+  border-bottom: solid 3px rgb(226, 225, 225);
+  background: url(../../images/ux-store-jJT2r2n7lYA-unsplash.jpg);
+  background-size: 2000px 1200px;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* padding: 10px; */
+}
+
+.hero-overlay {
+  /* width: 100%; */
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    to bottom right,
+    rgba(0, 0, 0, 0.78),
+    rgba(26, 19, 26, 0.95) 80%
+  );
+}
+
+
+.hero-block {
+  font-family: "roboto condensed";
+  padding: 25px 10px;
+  margin: 30px auto;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  /* background: linear-gradient(to top left, transparent 50%, rgb(255, 255, 255) 50%, transparent 50%); */
+  border: dashed 1px rgba(94, 94, 94, 0.801);
+  transition: 0.5s;
+}
+
+.hero-block-a h1 {
+  color: rgba(255, 255, 255, 0.61);
+  font-size: 20px;
+  font-weight: 100;
+  letter-spacing: 4px;
+  margin: 15px;
+}
+
+.fa-angle-double-down {
+  color: rgba(226, 225, 225, 0.726);
+  font-size: 20px;
+  position: absolute;
+  bottom: 50px;
+}
+
+
+.hero-block-b h1 {
+  margin: 20px 0;
+}
+
+.hero-block-b :first-child {
+  /* transform: scaleY(1.2); */
+  text-align: center;
+  font-weight: 100;
+  letter-spacing: 10px;
+}
+
+.hero-block-b :last-child {
+  text-align: center;
+  transform: scaleY(1.35);
+  font-weight: 700;
+  letter-spacing: 15px;
+}
+
+@media only screen and (min-width: 768px) {
+  /* .fa-angle-double-down {
+    color: rgb(226, 225, 225);
+    font-size: 25px;
+    position: absolute;
+    bottom: 50px;
+  } */
+
+  .chev-jump {
+    position: absolute;
+    bottom: 25px;
+  }
+
+  /* .hero-overlay h1 {
+    color: rgb(226, 225, 225);
+    font-weight: 300;
+    text-align: center;
+    line-height: 1.2em;
+    font-size: 35px;
+  } */
+
+  .hero-block-a h1 {
+    font-size: 25px;
+    font-weight: 100;
+    letter-spacing: 4px;
+    margin: 15px;
+  }
+
+  .hero-block {
+    font-family: "roboto condensed";
+    padding: 25px 20px;
+    margin: 30px auto;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    /* border: dashed 1px rgba(94, 94, 94, 0.801); */
+    transition: 0.5s;
+  }
+
+  /* .hero-block:hover {
+    border: dashed 1px #ff66006e;
+  } */
+
+
+  /* .fa-angle-double-down {
+    border: dashed 1px rgba(94, 94, 94, 0.801);
+    border-radius: 100%;
+    padding: 10px 15px;
+  } */
+}
+
+@media only screen and (max-width: 768px) and (orientation: landscape) {
+
+  .hero-overlay {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .hero-overlay > * {
+    margin: 10px;
+  }
+
+  .fa-angle-double-down {
+    /* display: none; */
+    /* margin-right: auto; */
+    position: absolute;
+    bottom: 10px;
+    left: 350px;
+  }
+
+ .hero-block {
+  font-size: 20px;
+  /* margin-left: auto; */
+  /* background: linear-gradient(to top left, transparent 50%, rgb(255, 255, 255) 50%, transparent 50%); */
+  transition: 0.5s;
+}
+}
